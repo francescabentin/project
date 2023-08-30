@@ -1,0 +1,19 @@
+@import 'core/reset';
+@import 'core/variables';
+@import 'core/mixins';
+@import 'layout/header';
+@import 'layout/section1';
+@import 'layout/section2';
+@import 'layout/footer';
+
+/* CSS para dispositivos de escritorio */
+.desktop-only {
+  display: block; /* Muestra la sección en dispositivos de escritorio */
+}
+
+/* CSS para dispositivos móviles */
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none; /* Oculta la sección en dispositivos móviles */
+  }
+}

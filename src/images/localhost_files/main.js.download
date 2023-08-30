@@ -1,0 +1,87 @@
+"use strict";
+
+const restaurantes =
+    [
+        {
+            "nombre": "Restaurante del Mar",
+            "descripcion": "Española",
+            "estrellas": 4.5,
+
+            "comunidad": "Galicia"
+        },
+        {
+            "nombre": "La Parrilla Andaluza",
+            "descripcion": "Carnes a la parrilla en estilo andaluz.",
+            "estrellas": 4.2,
+
+            "comunidad": "Andalucía"
+        },
+        {
+            "nombre": "Sabores de Cataluña",
+            "descripcion": "Especialidades de la cocina catalana.",
+            "estrellas": 4.7,
+
+            "comunidad": "Cataluña"
+        },
+        {
+            "nombre": "Asador Vasco",
+            "descripcion": "Carnes asadas al estilo vasco.",
+            "estrellas": 4.6,
+
+            "comunidad": "País Vasco"
+        }
+
+    ];
+
+
+
+const restaurantContainer = document.getElementById('restaurant__container');
+
+restaurantes.forEach((restaurante, index) => {
+    const restauranteElement = document.createElement('div');
+    restauranteElement.classList.add('restaurant__container__restaurante');
+
+    const divImage = document.createElement('div');
+    divImage.classList.add('restaurant__container__restaurante__image');
+
+
+    const imagenElement = document.createElement('img');
+    imagenElement.src = `./assets/images/${index + 1}.jpeg`;
+    imagenElement.classList.add('restaurant__container__restaurante__image__img')
+
+    const divInfo = document.createElement('div');
+    divInfo.classList.add('restaurant__container__restaurante__info');
+
+
+    const nombreElement = document.createElement('h2');
+    nombreElement.textContent = restaurante.nombre;
+
+    const puntajeElement = document.createElement('p');
+    puntajeElement.textContent = `Puntaje: ${restaurante.puntaje}`;
+
+    const precioElement = document.createElement('p');
+    precioElement.textContent = `Precio: ${restaurante.precio_aprox}`;
+
+    const paisElement = document.createElement('p');
+    paisElement.textContent = `País: ${restaurante.comunidad}`;
+
+
+    restauranteElement.appendChild(divImage);
+    divImage.appendChild(imagenElement);
+    restauranteElement.appendChild(divInfo);
+
+    divInfo.appendChild(nombreElement);
+    divInfo.appendChild(puntajeElement);
+    divInfo.appendChild(precioElement);
+    divInfo.appendChild(paisElement);
+
+    restaurantContainer.appendChild(restauranteElement);
+});
+
+
+
+
+
+
+
+//# sourceMappingURL=main.js.map
