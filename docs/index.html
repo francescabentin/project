@@ -14,7 +14,38 @@
 
 <body>
   <header class="desktop-only">
-  <h1>HOLA soy header</h1>
+  <header class="header" id="header">
+      <div class="header__menu">
+
+
+          <img class="header__menu__logo" src="./assets/images/logo.png" alt="logo" title="Logo">
+
+      </div>
+
+  <div class="search-form">
+    <div class="search-section">
+      <label for="search-form-where">
+        <span class="input-label"></span>
+      </label>
+      <div class="input-container">
+        <input type="text" id="search-form-where" class="input" placeholder="MADRID" >
+      </div>
+    </div>
+    <div class="search-section">
+      <label for="search-form-what">
+        <span class="input-label"></span>
+      </label>
+      <div class="input-container">
+        <input type="text" id="search-form-what" class="inputWhere" placeholder="Tipo de cocina, nombre del restaurante..." >
+  </div></div>
+    <button type="submit" class="search-button">
+      <span>Búsqueda</span>
+    </button>
+  </div>
+
+
+
+  </header>
 
 
   </header>
@@ -36,14 +67,25 @@
        </svg>
     </form>
 
-    <section class="section">
-    <div id="restaurant__container"></div>
+    <section class="body">
+      <div class="selector">
+        <div class="icon"><i class="fas fa-calendar"></i></div>
+        <div class="text">FECHA</div>
+        <input type="date" class="date-input">
+        <div class="arrow"><i class="fas fa-chevron-down"></i></div>
+      </div>
 
+      <div class="selector">
+        <div class="icon"><i class="fas fa-users"></i></div>
+        <div class="text">PERS</div>
+        <input type="number" class="people-input" min="1" value="1">
+        <div class="arrow"><i class="fas fa-chevron-down"></i></div>
+      </div>
     </section>
 
-
-
-
+    <section class="section">
+    <div id="restaurant__container"></div>
+    </section>
 
     </section>
     <form  class="desktop-only">

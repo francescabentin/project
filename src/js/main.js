@@ -29,6 +29,62 @@ const restaurantes =
             "estrellas": 4.6,
             "precio": '$$$',
             "comunidad": "País Vasco"
+        },
+        {
+            "nombre": "Restaurante del Mar",
+            "descripcion": "Española",
+            "estrellas": 4.5,
+            "precio": '$$$',
+            "comunidad": "Galicia"
+        },
+        {
+            "nombre": "La Parrilla Andaluza",
+            "descripcion": "Carnes a la parrilla en estilo andaluz.",
+            "estrellas": 4.2,
+            "precio": '$$$',
+            "comunidad": "Andalucía"
+        },
+        {
+            "nombre": "Sabores de Cataluña",
+            "descripcion": "Especialidades de la cocina catalana.",
+            "estrellas": 4.7,
+            "precio": '$$$',
+            "comunidad": "Cataluña"
+        },
+        {
+            "nombre": "Asador Vasco",
+            "descripcion": "Carnes asadas al estilo vasco.",
+            "estrellas": 4.6,
+            "precio": '$$$',
+            "comunidad": "País Vasco"
+        },
+        {
+            "nombre": "Restaurante del Mar",
+            "descripcion": "Española",
+            "estrellas": 4.5,
+            "precio": '$$$',
+            "comunidad": "Galicia"
+        },
+        {
+            "nombre": "La Parrilla Andaluza",
+            "descripcion": "Carnes a la parrilla en estilo andaluz.",
+            "estrellas": 4.2,
+            "precio": '$$$',
+            "comunidad": "Andalucía"
+        },
+        {
+            "nombre": "Sabores de Cataluña",
+            "descripcion": "Especialidades de la cocina catalana.",
+            "estrellas": 4.7,
+            "precio": '$$$',
+            "comunidad": "Cataluña"
+        },
+        {
+            "nombre": "Asador Vasco",
+            "descripcion": "Carnes asadas al estilo vasco.",
+            "estrellas": 4.6,
+            "precio": '$$$',
+            "comunidad": "País Vasco"
         }
 
     ];
@@ -36,6 +92,7 @@ const restaurantes =
 
 
 const restaurantContainer = document.getElementById('restaurant__container');
+restaurantContainer.classList.add('restaurant__container');
 
 restaurantes.forEach((restaurante, index) => {
     const restauranteElement = document.createElement('div');
@@ -46,7 +103,12 @@ restaurantes.forEach((restaurante, index) => {
 
 
     const imagenElement = document.createElement('img');
-    imagenElement.src = `./assets/images/${index + 1}.jpeg`;
+    if (index >= 1 && index <= 4) {
+        imagenElement.src = `./assets/images/${index}.jpeg`;
+    } else {
+        imagenElement.src = './assets/images/1.jpeg';
+    }
+
     imagenElement.classList.add('restaurant__container__restaurante__image__img')
 
     const divInfo = document.createElement('div');
