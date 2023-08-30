@@ -4,7 +4,8 @@
 El proyecto se basa en el desarrollo desde 0 de una página web. El objetivo principal fue desarrollar un proyecto web desde cero con ciertos requerimientos. 
 
 
-<img src='https://github.com/francescabentin/project/main/src/images/readme.png'>
+<img src='https://github.com/francescabentin.github.io/project/main/src/images/readme.png'>
+
 
 
 # Herramientas utilizadas:
