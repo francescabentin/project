@@ -1,30 +1,10 @@
 
-# Proyecto de Papachos
+# Proyecto de Buscador de Restaurantes
 
-El proyecto de Papachos se basa en el desarrollo desde 0 de una página web que esta hecha para un restaurante ficticio que tiene las mejores hamburguesas de Valencia. El objetivo principal fue desarrollar un proyecto web desde cero con ciertos requerimientos. El diseño está inspirado en dos restaurantes uno Peruano y uno de Nueva York, combinando estilos de ambas para crear una apariencia única. La página web es responsive, adaptándose a diferentes tamaños de pantalla, y cuenta con un menú dinámico que utiliza JavaScript para mostrar y ocultar sus opciones.
+El proyecto se basa en el desarrollo desde 0 de una página web. El objetivo principal fue desarrollar un proyecto web desde cero con ciertos requerimientos. 
 
 
-<img src='https://github.com/francescabentin/burguer-website/blob/main/src/images/imagen-readme.png'>
-
-## Requerimientos y calidad básica:
-- Encabezado con el logotipo y menú de navegación
-- Sección de presentación con imagen y texto
-- Sección de menú con una lista de hamburguesas y sus precios (mínimo 4, máximo 6)
-- Pie de página con enlaces a redes sociales
-- La página web debe ser completamente responsive y adaptarse a diferentes tamaños de pantalla
-- Utilizar Flexbox o CSS Grid para el diseño
-- Utilizar al menos una animación o transición con CSS
-- El css debe escribirse en BEM
-- El menú de navegación debe ser funcional (apertura y cierre)
-
-## El proceso de desarrollo del proyecto se llevó a cabo de la siguiente manera:
-
-- Estructura del proyecto: Se creó una estructura básica del proyecto que incluía los archivos HTML, SCSS y JavaScript necesarios, así como las herramientas elegidas para arrancar el proyecto.
-- Desarrollo de los elementos básicos: Se comenzó a desarrollar el proyecto de manera gradual, enfocándose en una sección a la vez. Primero se implementaron las funcionalidades y elementos de cada sección, como el menú o la estructura de sección.
-- Detalles de diseño: Una vez que la página ya estaba operativa, funcionaba el menú y tenía la información básica, se comenzó a trabajar en los detalles de diseño, como la incorporación de imágenes, la búsqueda de colores y el rellenado de secciones faltantes.
-- Detalles responsive: Teniendo todos los elementos que conformarían la página, se dedicó tiempo a alinear el grid y crear las media queries para tablet y escritorio, considerando el enfoque de mobile first.
-- Detalles finales y elección de animaciones: Se pulieron los detalles que faltaban y se eligió la animación adecuada. Por ejemplo, se descartó un slider que afectaba la eficiencia y la velocidad de carga de la página, optando por otra animación que priorizara la accesibilidad y el rendimiento.
-- Pruebas finales: Finalmente, se compartió la página en diferentes dispositivos y navegadores para verificar su funcionamiento correcto y asegurar una buena experiencia de usuario.
+<img src='https://github.com/francescabentin/project/main/src/images/readme.png'>
 
 
 # Herramientas utilizadas:
