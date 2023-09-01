@@ -4,7 +4,6 @@
 @import 'layout/header';
 @import 'layout/section1';
 @import 'layout/section2';
-@import 'layout/footer';
 
 /* CSS para dispositivos de escritorio */
 .desktop-only {
@@ -16,9 +15,10 @@
   .desktop-only {
     display: none; /* Oculta la sección en dispositivos móviles */
   }
-  .body{
-    display: none;
-  }
+ 
 }
 
+*{
+  font-family: 'Roboto', sans-serif;
+}
 

@@ -9,11 +9,11 @@ gap: 10px;
         &__restaurante{
            display: flex;
   flex-direction: row;
-  background-color: #ddd;
-    margin: 0 5px;
-  border: 1px solid #ddd;
+  background-color: #f8f4f4;
+  margin: 0 5px;
+  border: 1px solid #f9f3f3;
   border-radius: 5px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
   
 
         &__image{
@@ -41,6 +41,7 @@ gap: 10px;
 
     }
 
+
     p{
         padding: 5px 0;
         display: inline-flex;
@@ -50,15 +51,17 @@ gap: 10px;
         font-size: 13px;
     }
 
-    .section{
-        padding-top: 10px;
+    .section1{
+      background-color: #f8d291 ;
         width: 100%;
+        padding: 20px 5px;
+        
     }
 
     .search__mobile{
         width: 100%;
         margin-left: 2px;
-        height: 20px;
+        height: 25px;
         border-radius: 5px;
     }
 
@@ -76,16 +79,35 @@ gap: 10px;
     position: relative;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1040px) {
   .search__mobile  {
     display: none; /* Oculta la sección en dispositivos móviles */
   }
+   h2{
+        font-size: 25px;
+        padding: 10px
+
+    }
+      p{
+        padding: 5px 0;
+        display: inline-flex;
+        gap: 20px;
+        padding-left: 15px;
+        margin-left: 5px;
+        font-size: 20px;
+    }
+        .section1{
+      background-color: #f8d291 ;
+        width: 100%;
+        padding: 50px 50px;
+        
+    }
 
   .input-icon {
     display: none;
   }
   .section{
-  background-color: #d7ad65;
+  background-color:#f8d291;
   
 }
 
@@ -93,6 +115,7 @@ gap: 10px;
      display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
+
 
 
   }
@@ -117,7 +140,7 @@ gap: 10px;
 .selector {
   display: flex;
   align-items: center;
-  border: 1px solid #ccc;
+
   padding: 8px;
   border-radius: 4px;
   margin: 10px;
