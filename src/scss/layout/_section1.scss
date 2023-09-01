@@ -43,7 +43,7 @@ gap: 10px;
 
 
     p{
-        padding: 5px 0;
+        padding: 15px 10px;
         display: inline-flex;
         gap: 10px;
         padding-left: 6px;
@@ -61,8 +61,9 @@ gap: 10px;
     .search__mobile{
         width: 100%;
         margin-left: 2px;
-        height: 25px;
+        height: 28px;
         border-radius: 5px;
+        font-size: 15px;
     }
 
     .input-icon {
@@ -88,13 +89,18 @@ gap: 10px;
         padding: 10px
 
     }
+    .fa-solid, .fas {
+    font-weight: 900;
+    font-size: 15px;
+}
       p{
-        padding: 5px 0;
+        padding: 20px 5px;
         display: inline-flex;
         gap: 20px;
         padding-left: 15px;
         margin-left: 5px;
         font-size: 20px;
+       
     }
         .section1{
       background-color: #f8d291 ;
@@ -120,6 +126,14 @@ gap: 10px;
 
 
   }
+
+  /* Estilo para los horarios */
+.restaurant__container__restaurante__info__horarios {
+    font-size: 20px; /* Cambia el tamaño de fuente según tus preferencias */
+    margin-top: 20px; /* Espacio superior para separarlos del resto de la información */
+    color: #333; /* Cambia el color según tus preferencias */
+}
+
 .restaurant__container__restaurante__image{
   height: 200px;
   width: 250px;
@@ -172,5 +186,5 @@ gap: 10px;
 
 .fa-solid, .fas {
     font-weight: 900;
-    font-size: 15px;
+    font-size: 10px;
 }

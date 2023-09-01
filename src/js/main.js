@@ -127,6 +127,9 @@ restaurantes.forEach((restaurante, index) => {
     const paisElement = document.createElement('p');
     paisElement.textContent = `${restaurante.comunidad}`;
 
+    const horariosElement = document.createElement('p');
+    horariosElement.textContent = '14:00 / 16:00 / 18:00';
+    horariosElement.classList.add('restaurant__container__restaurante__info__horarios');
 
     restauranteElement.appendChild(divImage);
     divImage.appendChild(imagenElement);
@@ -136,6 +139,7 @@ restaurantes.forEach((restaurante, index) => {
     divInfo.appendChild(puntajeElement);
     divInfo.appendChild(precioElement);
     divInfo.appendChild(paisElement);
+    divInfo.appendChild(horariosElement);
 
     restaurantContainer.appendChild(restauranteElement);
 });
